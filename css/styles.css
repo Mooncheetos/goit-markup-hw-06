@@ -1,0 +1,882 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+}
+
+/* Стилі для хедера */
+.page-header {
+    color: #4d5ae5;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Стилі для футера */
+.page-footer {
+    background-color: #2e2f42;
+}
+
+.page-navi {
+    display: flex;
+    align-items: center;
+}
+
+/* Стилі для логотипу в хедері і футері */
+.header-logo {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #4d5ae5;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin-right: 76px;
+}
+
+/* Колір для частини логотипу */
+.header-logo-color {
+    color: #2e2f42;
+}
+
+.header-navi-list {
+    display: flex;
+    gap: 40px;
+
+}
+
+.header-link-fir.header-link-sec {
+    color: #404bbf;
+}
+
+.header-link-sec::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    color: #404bbf;    
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;      
+}
+
+/* Стилі для посилань в хедері */
+.header-link-fir {
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    position: relative;    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі для посилань при наведенні та фокусу */
+.header-link-fir:hover,
+.header-link-fir:focus {
+    color: #404bbf;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+/* Стилі для списків */
+ul {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Стилі для посилань */
+a {
+    text-decoration: none;
+}
+
+/* Стилі для адреси в хедері */
+.header-address {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
+
+/* Стилі для поштових адрес у хедері */
+.header-address-mail {
+    font-size: 16px;
+    color: #434455;
+    font-style: normal;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+    /* 2dob */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі для адреси при наведенні */
+.header-address-mail:hover {
+    color: #404bbf;
+}
+
+/* Стилі для адреси при фокусі */
+.header-address-mail:focus {
+    color: #404bbf;
+}
+
+/* Стилі для першої секції */
+.section-one {
+    background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        /* to bottom, */
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі для заголовка першої секції */
+.page-title {
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+}
+
+/* Стилі для кнопки в першій секції */
+.title-button {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі для кнопки при наведенні та фокусу */
+.title-button:hover,
+.title-button:focus {
+    background-color: #404bbf;
+}
+
+.section-two {
+    padding: 120px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-icon-box {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background-color: #f4f4fd;    
+    margin-bottom: 8px;
+    order: 1;
+}
+
+/* Стилі для заголовків користувальницьких переваг і портфоліо */
+.section-benefitions {
+    color: #2e2f42;
+        /* text-align: center; */
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: capitalize;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        /* width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border-radius: 4px;
+        border: 1px solid #8E8F99; */
+}
+
+.section-beneros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.section-beneros-list {
+    flex-basis: calc((100% - 72px) / 4);
+    flex-direction: column;
+    align-items: center;
+    /* width: 128px;
+    height: 128px; */
+}
+
+/* Стилі для заголовків користувальницьких портфоліо */
+.section-port {
+    color: #2e2f42;
+    /* text-align: center; */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+
+/* Стилі для тексту користувальницьких переваг та тексту портфоліо */
+.benefits-text,
+.port-text {
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+    /* 3dob */
+}
+
+.benefits-icon {
+    color: #4d5ae5;
+}
+/* Стилі для третьої секції (команда) */
+.section-three {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Стилі для заголовка команди */
+.section-team {
+    color: #2e2f42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+}
+
+.team-images {
+    display: flex;
+    gap: 24px;
+}
+
+.team-img-odi {
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* Стилі для зображень команди */
+.team-images-ver {
+    background-color: #fff;
+}
+
+.team-container {
+    padding: 32px 0;
+}
+
+/* Стилі для імені та посади у команді */
+.team-image-one {
+    color: #2e2f42;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+    text-align: center;    
+    margin-bottom: 8px;
+}
+
+.team-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+    text-align: center;    
+}
+
+.team-socmedia-list {
+    margin: 8px;
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-socmedia-list .media-item {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.team-socmedia-list .team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-socmedia-list .team-link:hover,
+.team-socmedia-list .team-link:focus,
+.team-socmedia-list .team-link:active {
+    background-color: #404bbf;
+}
+
+.team-socmedia-list .team-link-svg {
+    fill: #f4f4fd
+}
+
+/* Стилі для четвертої секції (портфоліо) */
+.section-four {
+    background-color: #fff;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Стилі для заголовка портфоліо */
+.section-port {
+    color: #2e2f42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+}
+
+.port-images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+
+}
+
+.port-images-folio:hover {
+    /* transform: translateY(0%); */
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.port-images-folio:hover .port-cover-text {
+    opacity: 1;
+    background: #4D5AE5;
+    transform: translateY(0%);
+}
+
+.port-cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.port-cover-text {
+    color: #f4f4fd;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 32px;
+    /* height: 100px; */
+    /* background-color: rgba(77, 90, 229, 0.9); */
+    border-radius: 0px 0px 4px 4px;
+    opacity: 0;
+    transform: translateY(100%);
+    background-color: #4d5ae5;
+    height: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі для зображень портфоліо */
+.port-images,
+.port-images-ver {
+    background-color: #fff;
+}
+
+.port-images-folio {
+    flex-basis: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі для імені та типу робіт у портфоліо */
+.port-image-one {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.container-portfolio-image {
+    padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+}
+
+/* Стилі для футера */
+.page-footer {    
+    padding: 100px 0;    
+    flex-shrink: 0;
+    background-color: #2e2f42;
+}
+
+/* Стилі для тексту футера */
+.footer-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.50;
+    color: #f4f4fd;
+    letter-spacing: 0.02em;
+    width: 264px;
+    /* 5dob */
+}
+
+.logo-paragraph {
+    margin-right: 120px;
+}
+
+.page-footer-container {
+    display: flex;    
+    align-items: baseline;
+}
+/* Колір для частини логотипу у футері */
+.footer-logo {
+    color: #4d5ae5;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #4d5ae5;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+    margin-bottom: 16px;
+}
+
+/* Колір для частини логотипу у футері при наведенні */
+.footer-logo-color {
+    color: #f4f4fd;
+    margin-bottom: 16px;
+}
+
+.footer-media-container {
+    margin-right: 80px;
+}
+
+.footer-soc-media-text {
+    color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    gap: 16px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-list {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d5ae5;
+    padding: 8px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list .soc-link:hover,
+.social-list .soc-link:focus,
+.social-list .soc-link:active {
+    background-color: #31d0aa;
+}
+
+.social-list .link-svg {
+    fill: #f4f4fd
+}
+
+.section-title {
+    color: #2E2F42;
+        text-align: center;        
+        font-size: 16px;        
+        font-weight: 500;
+        line-height: 1.15;        
+        letter-spacing: 0.02em;
+}
+
+.footer-bottom-text {
+    color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+
+.footer-bottom {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-form-input {
+    width: 264px;
+        height: 40px;
+        flex-shrink: 0;
+        color: #ffffff;
+        border-radius: 4px;
+            border: 1px solid #ffffff;
+            /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+            background-color: transparent;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            outline: transparent;
+            padding: 0 16px;
+            font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+
+}
+
+.footer-form-input::placeholder {   
+    color: #ffffff;
+        /* font-size: 12px;        
+        line-height: 1.5;
+        letter-spacing: 0.04em; */
+}
+
+.sub-link-svg {
+    margin-left: 16px;
+}
+
+.footer-form-btn {
+    color: #fff;
+        display: inline-flex;
+        padding: 8px 24px;
+            justify-content: center;
+            align-items: center;            
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+        background-color: #4d5ae5;
+        font-weight: 500;
+        line-height: 1.50;
+        letter-spacing: 0.04em;
+        min-width: 165px;
+        height: 40px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 4px;
+        /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.backdrop {
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-btn {
+    display: flex;
+    background-color: #e7e9fc;
+    justify-content: center;
+        align-items: center;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0  ;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404bbf;
+    border: none;
+    
+}
+
+.modal-title {
+    text-align: left;
+    max-width: 360px;
+    
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-field-lab {
+    margin-bottom: 16px;
+}
+
+.modal-field-check {
+    margin-bottom: 24px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    padding-left: 38px;
+    padding-right: 16px;
+    outline: transparent; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+    color: #8E8F99;    
+    border-color: #4d5ae5;
+}
+
+.modal-input:hover,
+.modal-input:focus + .modal-icon {
+    /* stroke: #4d5ae5; */
+    fill: #4d5ae5;
+}
+
+.modal-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: #ffffff;
+}
+
+.modal-form-but {    
+        padding: 16px 32px;
+        color: #fff;
+            display: block;
+            font-size: 16px;
+            font-family: "Roboto", sans-serif;
+            cursor: pointer;
+            background-color: #4d5ae5;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            min-width: 169px;
+            height: 56px;
+            margin: 0 auto;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.modal-label {
+    display: block;
+    color: #8E8F99;            
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.17;        
+        letter-spacing: 0.04em;
+        margin-bottom: 4px;
+}
+
+.modal-icon {
+    position: absolute;    
+    fill: #2E2F42;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* transition: stroke 300ms linear; */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-texar {
+    width: 100%;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid rgba(46, 47, 66, 0.40);
+        background-color: transparent;        
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+        outline: transparent;
+        transition: border-color 300ms linear;
+        resize: none;
+        padding: 8px 16px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-texar:focus {
+    border-color:#4d5ae5;
+}
+
+.modal-texar::placeholder {
+    color: rgba(46, 47, 66, 0.40);            
+        font-size: 12px;        
+        line-height: 1.17;       
+        letter-spacing: 0.04em;
+}
+
+.tercon-text {
+    /* display: flex;         */
+        align-items: center;
+    color:#8E8F99;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+}
+
+.tercon-text-link {
+    color:#4D5AE5;
+    text-decoration-line: underline;
+}
+
+.tercon-text-box {    
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    margin-right: 12px;   
+    /* display: flex; */
+    margin-left: inherit;  
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    display: inline-flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked + .tercon-text .tercon-text-box {
+    background-color: #404BBF;
+    border: none;
+    fill: #f4f4fd;
+}
