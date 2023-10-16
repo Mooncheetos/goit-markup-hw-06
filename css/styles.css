@@ -48,8 +48,9 @@ body {
     color: #2e2f42;
 }
 
-.header-navi-list {
-    display: flex;
+.header-navi {
+    /* display: flex; */
+    display: none;
     gap: 40px;
 
 }
@@ -120,14 +121,18 @@ a {
 }
 
 /* Стилі для адреси в хедері */
-.header-address {
+.header-address-to {
     font-style: normal;
     margin-left: auto;
 }
 
-.header-address-list {
-    display: flex;
+.header-address {    
+    display: none;
     gap: 40px;
+}
+
+.menu-link-svg {
+    margin-left: auto;
 }
 
 /* Стилі для поштових адрес у хедері */
@@ -150,6 +155,108 @@ a {
 .header-address-mail:focus {
     color: #404bbf;
 }
+
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-bottom: 40px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+.menu-close-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    /* display: flex; */    
+        justify-content: center;
+        align-items: center;
+        background-color: #E7E9FC;
+        border-radius: 50%;        
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-list {
+    gap: 24px;
+    margin-bottom: 148px;
+}
+
+.mob-menu-link:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mob-menu-fir {
+    color: #2E2F42;        
+        font-size: 36px;        
+        font-weight: 700;
+        line-height: 1.11;        
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.mob-menu-sec {}
+
+.mob-address {    
+    color: #434455;
+        font-size: 20px;               
+        font-weight: 500;
+        line-height: 1.2;           
+        letter-spacing: 0.02em; 
+        display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+}
+
+.mob-address-mail {
+    color: #434455;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;        
+        letter-spacing: 0.02em;
+}
+
+.mob-socmedia-list {    
+        display: inline-flex;
+        gap: 40px;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: flex-start;
+}
+
+.mob-media-item {
+    display: flex;
+        width: 40px;
+        height: 40px;
+}
+
+.mob-team-link {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-team-link-svg {
+    fill: #f4f4fd
+}
+
 
 /* Стилі для першої секції */
 .section-one {
@@ -982,6 +1089,14 @@ opacity: 1;
             padding-left: 15px;
             padding-right: 15px;
             margin: 0 auto;
+    }
+
+        .header-navi {
+            display: flex;
+        }
+
+    .header-address {
+            display: flex;
     }
 
     .section-one {
