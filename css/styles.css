@@ -132,7 +132,7 @@ a {
 }
 
 .menu-link-svg {
-    margin-left: auto;
+    margin-left: auto;    
 }
 
 /* Стилі для поштових адрес у хедері */
@@ -154,6 +154,11 @@ a {
 /* Стилі для адреси при фокусі */
 .header-address-mail:focus {
     color: #404bbf;
+}
+
+.menu-open-btn {    
+    border: none;
+    background-color: transparent;
 }
 
 .mob-menu {
@@ -184,7 +189,7 @@ a {
         justify-content: center;
         align-items: center;
         background-color: #E7E9FC;
-        border-radius: 50%;        
+        border-radius: 50%;               
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -619,12 +624,16 @@ a {
 }
 
 .logo-paragraph {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    margin-bottom: 72px;
+    
 }
 
-.page-footer-container {
-    display: flex;    
-    align-items: baseline;
+.page-footer-container {    
+    display: flex;
+    flex-wrap: wrap;
+        align-items: flex-start;        
+            justify-content: space-between;
 }
 /* Колір для частини логотипу у футері */
 .footer-logo {
@@ -640,6 +649,7 @@ a {
         text-transform: uppercase;
         text-decoration: none;
     margin-bottom: 16px;
+    margin-left: 110px;
 }
 
 /* Колір для частини логотипу у футері при наведенні */
@@ -650,6 +660,7 @@ a {
 
 .footer-media-container {
     margin-right: 80px;
+    margin-bottom: 72px;
 }
 
 .footer-soc-media-text {
@@ -659,6 +670,7 @@ a {
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
+        margin-left: 110px;
 }
 
 .social-list {
@@ -667,6 +679,7 @@ a {
     padding-left: 0px;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 
 .soc-list {
@@ -705,24 +718,27 @@ a {
         letter-spacing: 0.02em;
 }
 
-.footer-bottom-text {
+.footer-bottom-text {    
     color: #ffffff;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
+        margin-left: 122px;
 }
 
 .footer-bottom {
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;    
+    display: flex;      
+    flex-wrap: wrap;
+        align-items: flex-start;
 }
 
 .footer-form {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+        align-items: center;
 }
 
 .footer-form-input {
@@ -740,6 +756,7 @@ a {
             font-size: 12px;
                 line-height: 1.5;
                 letter-spacing: 0.04em;
+                margin-left: 20px;
 
 }
 
@@ -759,7 +776,7 @@ a {
         display: inline-flex;
         padding: 8px 24px;
             justify-content: center;
-            align-items: center;            
+            align-items: center;             
         font-size: 16px;
         font-family: "Roboto", sans-serif;
         cursor: pointer;
@@ -795,8 +812,8 @@ opacity: 1;
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     border-radius: 4px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -1025,6 +1042,32 @@ opacity: 1;
                     }
                 }
 
+                                .menu-open-btn {
+                                    display: none;
+                                    border: none;
+                                }
+
+                                .header-navi {
+                            display: inline-flex;                                
+                                align-items: flex-start;
+                                gap: 40px;
+                                margin-left: auto;
+                                
+                                }
+
+                                .header-address {
+                                    display: block;
+                                }
+
+                                .header-address-mail {
+                               display: flex;
+                                color: #434455;   
+                                padding: 6px;                             
+                                    font-size: 12px;                                    
+                                    line-height: 1.16;
+                                    letter-spacing: 0.04em;
+                              } 
+
                 .page-title {
                     font-size: 56px;
                     line-height: 1.07;
@@ -1080,6 +1123,11 @@ opacity: 1;
     .port-images-folio {
         flex-basis: calc((100% - 24px) / 2);
     }
+
+        .modal {
+            width: 408px;
+            min-height: 584px;
+        }
     
 }
 
@@ -1119,6 +1167,19 @@ opacity: 1;
                     url(../images/people-office-2x.jpg);
             }
         }
+
+        .menu-open-btn { 
+            display: none;
+        }
+
+                .header-address-mail {
+                    font-size: 16px;
+                    color: #434455;
+                    font-style: normal;
+                    line-height: 1.50;
+                    letter-spacing: 0.02em;
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
 
     .page-title {
         font-size: 56px;
@@ -1189,6 +1250,35 @@ opacity: 1;
                     flex-basis: calc((100% - 48px) / 3);
                     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
+
+                .modal {
+                 width: 408px;
+                min-height: 584px;
+                }
+
+            .page-footer-container {
+    display: flex;    
+    align-items: baseline;
+    flex-wrap: nowrap;
+    }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+
+    .footer-logo, .footer-bottom-text, .footer-soc-media-text {
+        margin-left: 0;
+    }
+
+    .footer-form-input {
+        margin-left: 16px;
+    }
+
+    .social-list {
+        margin-left: 0;
+    }
 
 
 }
