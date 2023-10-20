@@ -157,10 +157,23 @@ a {
     color: #404bbf;
 }
 
-.mob-container {
-    position: absolute;
-        top: 0;        
+.mob-container {    
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        justify-content: space-between;        
+        z-index: 1;
+        top: 0;
         left: 0;
+        max-width: 767px;        
+        width: 100vw;
+        height: 100vh;
+        background: #FFF;
+        padding-top: 72px;
+        padding-left: 16px;
+        padding-bottom: 40px;
+        
 }
 
 .menu-open-btn {    
@@ -168,25 +181,7 @@ a {
     background-color: transparent;
 }
 
-.mob-menu {
-    position: absolute;
-        top: 0;
-        left: 0;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: flex-start;
-    /* justify-content: space-between; */
-    justify-content: center;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #FFF;
-    padding-top: 72px;
-    padding-left: 16px;
-    padding-bottom: 40px;    
+.mob-menu {    
     opacity: 0;
     visibility: hidden;
     pointer-events: auto;
@@ -382,7 +377,7 @@ a {
 
 /* Стилі для заголовків користувальницьких переваг і портфоліо */
 .section-benefitions {
-    display: flex;
+    text-align: center;
     color: #2e2f42;        
         font-size: 36px;        
         font-weight: 700;        
@@ -390,7 +385,7 @@ a {
         text-transform: capitalize;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
-        justify-content: center;
+        
         
 }
 
@@ -1100,6 +1095,10 @@ opacity: 1;
                                     letter-spacing: 0.04em;
                               } 
 
+                        .section-benefitions {
+                            text-align: left;
+                        }
+
                 .page-title {
                     font-size: 56px;
                     line-height: 1.07;
@@ -1150,7 +1149,7 @@ opacity: 1;
             flex-direction: row;
             justify-content: left;
             gap: 72px 24px;
-            width: 584px;
+            max-width: 584px;
             align-items: start;
             margin: 0 auto;
         }
@@ -1360,7 +1359,8 @@ opacity: 1;
                 
 
             .page-footer-container {
-    display: flex;    
+    display: flex;
+    max-width: 1158px;
     align-items: baseline;
     justify-content: center;
     flex-wrap: nowrap;
